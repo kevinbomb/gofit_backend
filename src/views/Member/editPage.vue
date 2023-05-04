@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <h2>Edit Member</h2>
+      <h2>Edit Memba</h2>
       <form @submit.prevent="update">
         <div class="form-group">
           <label for="nama">Nama:</label>
