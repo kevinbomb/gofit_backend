@@ -23,10 +23,6 @@
         <select v-model="jadwal.ID_KELAS" class="form-control" id="kelas">
           <option v-for="kelas in kelasku" :key="kelas.ID_KELAS" :value="kelas.ID_KELAS">
             {{ kelas.NAMA_KELAS }}</option>  
-          <!-- <option value="1">Body Combat</option>
-            <option value="2">Yoga</option>
-            <option value="3">Belly Dance</option>
-            <option value="4">Zumba</option>   -->
         </select>
       </div>
       <div class="form-group">

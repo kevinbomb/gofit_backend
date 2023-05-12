@@ -12,6 +12,8 @@
                                     <tr>
                                         <th scope="col">NO MEMBER</th>
                                         <th scope="col">NAMA</th>
+                                        <th scope="col">SALDO</th>
+                                        <th scope="col">PAKET</th>
                                         <th scope="col">ALAMAT</th>
                                         <th scope="col">NO TELP</th>
                                         <th scope="col">STATUS</th>
@@ -22,10 +24,13 @@
                                     <tr v-for="(member, id) in members" :key="id">
                                         <td>{{ member.NO_MEMBER }}</td>
                                         <td>{{ member.NAMA_MEMBER }}</td>
+                                        <td v-if="member.SALDO_MEMBER!=null">{{ member.SALDO_MEMBER }}</td>
+                                        <td v-else style="color: red;">0</td>
+                                        <td>{{ member.PAKET_MEMBER }}</td>
                                         <td>{{ member.ALAMAT_MEMBER }}</td>
                                         <td>{{ member.NO_TELP_MEMBER }}</td>
                                         <td> <p v-if="member.STATUS_MEMBER==1">Aktif</p> 
-                                             <p v-else>Belum Aktif</p>
+                                             <p v-else style="color: red;">Belum Aktif</p>
                                         </td>
                                         <td class="text-center">
                                             <router-link :to="{name:'member.card', params: { id: member.NO_MEMBER }}" v-if="member.STATUS_MEMBER==1" class="btn btn-sm btn-outline-success">CARD</router-link>

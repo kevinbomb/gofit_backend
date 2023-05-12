@@ -69,6 +69,41 @@ const routes = [
         name: 'member.trans',
         component: () => import('@/views/Member/transPage.vue'),
       },
+      {
+        path: '/transaksiA',
+        name: 'transaksiA.index',
+        component: () => import('@/views/TransaksiAktivasi/indexPage.vue'),
+      },
+      {
+        path: '/transaksiA/card',
+        name: 'transaksiA.card',
+        component: () => import('@/views/TransaksiAktivasi/cardPage.vue'),
+      },
+      {
+        path: '/transaksiU',
+        name: 'transaksiU.index',
+        component: () => import('@/views/TransaksiUang/indexPage.vue'),
+      },
+      {
+        path: '/transaksiK',
+        name: 'transaksiK.index',
+        component: () => import('@/views/TransaksiKelas/indexPage.vue'),
+      },
+      {
+        path: '/transaksiU/card',
+        name: 'transaksiU.card',
+        component: () => import('@/views/TransaksiUang/cardPage.vue'),
+      },
+      {
+        path: '/transaksiK/card',
+        name: 'transaksiK.card',
+        component: () => import('@/views/TransaksiKelas/cardPage.vue'),
+      },
+      {
+        path: '/jadwalH',
+        name: 'jadwalH.index',
+        component: () => import('@/views/JadwalHarian/indexPage.vue'),
+      },
     ],
   },
 ];

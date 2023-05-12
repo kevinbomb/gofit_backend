@@ -24,6 +24,13 @@
                                 <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'">
                                     <router-link :to="{ name: 'jadwal.index' }" class="nav-link">Jadwal</router-link>
                                 </li>
+                            <!-- jadwal harian -->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'mo'">
+                                    <router-link :to="{ name: 'jadwalH.index' }" class="nav-link">Jadwal Harian</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'">
+                                    <router-link :to="{ name: 'jadwalH.index' }" class="nav-link">Jadwal Harian</router-link>
+                                </li>
                             <!-- member -->
                                 <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
                                     <router-link :to="{ name: 'member.index' }" class="nav-link">Member</router-link>
@@ -37,6 +44,27 @@
                                 </li>
                                 <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
                                     <router-link :to="{ name: 'member.trans' }" class="nav-link">Tranasksi</router-link>
+                                </li>
+                            <!-- list transaksi aktivasi-->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
+                                    <router-link :to="{ name: 'transaksiA.index' }" class="nav-link">Tranasksi Aktivasi</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
+                                    <router-link :to="{ name: 'transaksiA.index' }" class="nav-link">Tranasksi Aktivasi</router-link>
+                                </li>
+                            <!-- list transaksi uang-->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
+                                    <router-link :to="{ name: 'transaksiU.index' }" class="nav-link">Transaksi Isi Saldo</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
+                                    <router-link :to="{ name: 'transaksiU.index' }" class="nav-link">Transaksi Isi Saldo</router-link>
+                                </li>
+                            <!-- list transaksi kelas-->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
+                                    <router-link :to="{ name: 'transaksiK.index' }" class="nav-link">Transaksi Paket Kelas</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
+                                    <router-link :to="{ name: 'transaksiK.index' }" class="nav-link">Transaksi Paket Kelas</router-link>
                                 </li>
                         </ul>
                     </div>
