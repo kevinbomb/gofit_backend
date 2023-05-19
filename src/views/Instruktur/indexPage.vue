@@ -7,6 +7,7 @@
                         <div class="card-body">
                             <router-link :to="{ name: 'instruktur.add' }" class="btn btn-md btn-success">TAMBAH
                                 INSTRUKTUR</router-link>
+                            <button @click.prevent="confirmReset()" class="btn btn-l btn-danger ml-1">RESET TERLAMBAT</button>
                             <table class="table table-striped table-bordered mt-4">
                                 <thead class="thead-dark">
                                     <tr>
@@ -93,13 +94,36 @@ export default {
                 this.insDelete(id);
             }
         }
+        function confirmReset() {
+            if (confirm("Are you sure you want to reset all late records?")) {
+                this.insReset();
+            }
+        }
+        function insReset() {
+            //delete data post by ID
+            axios.put(`http://localhost:8000/api/presensiI`,{
+                headers: {
+                    'Accept': 'application/json',
+                    'Authorization': `Bearer ${localStorage.getItem("token")}`
+                }
+            })
+                .then(() => {
+                  getData()     
+                alert("Catatan Terlambat Dihapus!")
+             }).catch(error => {
+                 console.log(error.response.data)
+             })
+         
+        }
 
 
         //return
         return {
             instrukturs,
             insDelete,
-            confirmDelete
+            confirmDelete,
+            confirmReset,
+            insReset
         }
     }
 }

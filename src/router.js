@@ -70,6 +70,16 @@ const routes = [
         component: () => import('@/views/Member/transPage.vue'),
       },
       {
+        path: '/perizinan',
+        name: 'perizinan.index',
+        component: () => import('@/views/Perizinan/indexPage.vue'),
+      },
+      {
+        path: '/perizinan1',
+        name: 'perizinan1.index',
+        component: () => import('@/views/Perizinan/indexSatu.vue'),
+      },
+      {
         path: '/transaksiA',
         name: 'transaksiA.index',
         component: () => import('@/views/TransaksiAktivasi/indexPage.vue'),
@@ -103,6 +113,16 @@ const routes = [
         path: '/jadwalH',
         name: 'jadwalH.index',
         component: () => import('@/views/JadwalHarian/indexPage.vue'),
+      },
+      {
+        path: '/expAktivasi',
+        name: 'member.expA',
+        component: () => import('@/views/Member/expAPage.vue'),
+      },
+      {
+        path: '/expPaket',
+        name: 'member.expP',
+        component: () => import('@/views/Member/expPPage.vue'),
       },
     ],
   },

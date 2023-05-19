@@ -31,12 +31,33 @@
                                 <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'">
                                     <router-link :to="{ name: 'jadwalH.index' }" class="nav-link">Jadwal Harian</router-link>
                                 </li>
+                            <!-- perizinan -->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'mo'">
+                                    <router-link :to="{ name: 'perizinan.index' }" class="nav-link">Perizinan</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'">
+                                    <router-link :to="{ name: 'perizinan.index' }" class="nav-link">Perizinan</router-link>
+                                </li>
                             <!-- member -->
                                 <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
                                     <router-link :to="{ name: 'member.index' }" class="nav-link">Member</router-link>
                                 </li>
                                 <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
                                     <router-link :to="{ name: 'member.index' }" class="nav-link">Member</router-link>
+                                </li>
+                            <!-- exp aktivasi -->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
+                                    <router-link :to="{ name: 'member.expA' }" class="nav-link">Member Aktivasi Expired</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
+                                    <router-link :to="{ name: 'member.expA' }" class="nav-link">Member Aktivasi Expired</router-link>
+                                </li>
+                            <!-- exp paket -->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
+                                    <router-link :to="{ name: 'member.expP' }" class="nav-link">Member Paket Expired</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
+                                    <router-link :to="{ name: 'member.expP' }" class="nav-link">Member Paket Expired</router-link>
                                 </li>
                             <!-- transaksi -->
                                 <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
