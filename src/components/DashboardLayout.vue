@@ -87,6 +87,49 @@
                                 <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
                                     <router-link :to="{ name: 'transaksiK.index' }" class="nav-link">Transaksi Paket Kelas</router-link>
                                 </li>
+                            <!-- list booking kelas-->
+                                <!-- <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
+                                    <router-link :to="{ name: 'presensiK.index' }" class="nav-link">Konfirmasi Booking Kelas</router-link>
+                                </li> -->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
+                                    <router-link :to="{ name: 'presensiK.index' }" class="nav-link">Konfirmasi Booking Kelas</router-link>
+                                </li>
+                            <!-- trans booking kelas-->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
+                                    <router-link :to="{ name: 'presensiK1.index' }" class="nav-link">Transaksi Presensi Kelas</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
+                                    <router-link :to="{ name: 'presensiK1.index' }" class="nav-link">Transaksi Presensi Kelas</router-link>
+                                </li>
+
+                            <!-- list booking gym-->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
+                                    <router-link :to="{ name: 'presensiG.index' }" class="nav-link">Konfirmasi Booking Gym</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
+                                    <router-link :to="{ name: 'presensiG.index' }" class="nav-link">Konfirmasi Booking Gym</router-link>
+                                </li>
+                            <!-- trans booking gym-->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'kasir'" >
+                                    <router-link :to="{ name: 'presensiG1.index' }" class="nav-link">Transaksi Presensi Gym</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'" >
+                                    <router-link :to="{ name: 'presensiG1.index' }" class="nav-link">Transaksi Presensi Gym</router-link>
+                                </li>
+                                <!-- laporan gym -->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'mo'">
+                                    <router-link :to="{ name: 'laporanGym.index' }" class="nav-link">Laporan Gym</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'">
+                                    <router-link :to="{ name: 'laporanGym.index' }" class="nav-link">Laporan Gym</router-link>
+                                </li>
+                                <!-- laporan kelas -->
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'mo'">
+                                    <router-link :to="{ name: 'laporanKelas.index' }" class="nav-link">Laporan Kelas</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'">
+                                    <router-link :to="{ name: 'laporanKelas.index' }" class="nav-link">Laporan Kelas</router-link>
+                                </li>
                         </ul>
                     </div>
                 </nav>

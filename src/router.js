@@ -124,6 +124,166 @@ const routes = [
         name: 'member.expP',
         component: () => import('@/views/Member/expPPage.vue'),
       },
+      {
+        path: '/presensiKelas',
+        name: 'presensiK.index',
+        component: () => import('@/views/PresensiKelas/indexPage.vue'),
+      },
+      {
+        path: '/presensiKelas1',
+        name: 'presensiK1.index',
+        component: () => import('@/views/PresensiKelas/indexSatu.vue'),
+      },
+      {
+        path: '/presensiKelas/card',
+        name: 'presensiK.card',
+        component: () => import('@/views/PresensiKelas/cardPage.vue'),
+      },
+      {
+        path: '/presensiGym',
+        name: 'presensiG.index',
+        component: () => import('@/views/PresensiGym/indexPage.vue'),
+      },
+      {
+        path: '/presensiGym1',
+        name: 'presensiG1.index',
+        component: () => import('@/views/PresensiGym/indexSatu.vue'),
+      },
+      {
+        path: '/presensiGym/card',
+        name: 'presensiG.card',
+        component: () => import('@/views/PresensiGym/cardPage.vue'),
+      },
+      {
+        path: '/laporanGym',
+        name: 'laporanGym.index',
+        component: () => import('@/views/LaporanGym/indexPage.vue'),
+      },
+      {
+        path: '/laporanGymJan',
+        name: 'laporanGym.jan',
+        component: () => import('@/views/LaporanGym/Months/janPage.vue'),
+      },
+      {
+        path: '/laporanGymFeb',
+        name: 'laporanGym.feb',
+        component: () => import('@/views/LaporanGym/Months/febPage.vue'),
+      },
+      {
+        path: '/laporanGymMar',
+        name: 'laporanGym.mar',
+        component: () => import('@/views/LaporanGym/Months/marPage.vue'),
+      },
+      {
+        path: '/laporanGymApr',
+        name: 'laporanGym.apr',
+        component: () => import('@/views/LaporanGym/Months/aprPage.vue'),
+      },
+      {
+        path: '/laporanGymMay',
+        name: 'laporanGym.may',
+        component: () => import('@/views/LaporanGym/Months/mayPage.vue'),
+      },
+      {
+        path: '/laporanGymJun',
+        name: 'laporanGym.jun',
+        component: () => import('@/views/LaporanGym/Months/junPage.vue'),
+      },
+      {
+        path: '/laporanGymJul',
+        name: 'laporanGym.jul',
+        component: () => import('@/views/LaporanGym/Months/julPage.vue'),
+      },
+      {
+        path: '/laporanGymAug',
+        name: 'laporanGym.aug',
+        component: () => import('@/views/LaporanGym/Months/augPage.vue'),
+      },
+      {
+        path: '/laporanGymSep',
+        name: 'laporanGym.sep',
+        component: () => import('@/views/LaporanGym/Months/sepPage.vue'),
+      },
+      {
+        path: '/laporanGymOkt',
+        name: 'laporanGym.okt',
+        component: () => import('@/views/LaporanGym/Months/oktPage.vue'),
+      },
+      {
+        path: '/laporanGymNov',
+        name: 'laporanGym.nov',
+        component: () => import('@/views/LaporanGym/Months/novPage.vue'),
+      },
+      {
+        path: '/laporanGymDes',
+        name: 'laporanGym.des',
+        component: () => import('@/views/LaporanGym/Months/desPage.vue'),
+      },
+      {
+        path: '/laporanKelas',
+        name: 'laporanKelas.index',
+        component: () => import('@/views/LaporanKelas/indexPage.vue'),
+      },
+      {
+        path: '/laporanKelasjan',
+        name: 'laporanKelas.jan',
+        component: () => import('@/views/LaporanKelas/Months/janPage.vue'),
+      },
+      {
+        path: '/laporanKelasfeb',
+        name: 'laporanKelas.feb',
+        component: () => import('@/views/LaporanKelas/Months/febPage.vue'),
+      },
+      {
+        path: '/laporanKelasmar',
+        name: 'laporanKelas.mar',
+        component: () => import('@/views/LaporanKelas/Months/marPage.vue'),
+      },
+      {
+        path: '/laporanKelasapr',
+        name: 'laporanKelas.apr',
+        component: () => import('@/views/LaporanKelas/Months/aprPage.vue'),
+      },
+      {
+        path: '/laporanKelasmay',
+        name: 'laporanKelas.may',
+        component: () => import('@/views/LaporanKelas/Months/mayPage.vue'),
+      },
+      {
+        path: '/laporanKelasjun',
+        name: 'laporanKelas.jun',
+        component: () => import('@/views/LaporanKelas/Months/junPage.vue'),
+      },
+      {
+        path: '/laporanKelasjul',
+        name: 'laporanKelas.jul',
+        component: () => import('@/views/LaporanKelas/Months/julPage.vue'),
+      },
+      {
+        path: '/laporanKelasaug',
+        name: 'laporanKelas.aug',
+        component: () => import('@/views/LaporanKelas/Months/augPage.vue'),
+      },
+      {
+        path: '/laporanKelassep',
+        name: 'laporanKelas.sep',
+        component: () => import('@/views/LaporanKelas/Months/sepPage.vue'),
+      },
+      {
+        path: '/laporanKelasokt',
+        name: 'laporanKelas.okt',
+        component: () => import('@/views/LaporanKelas/Months/oktPage.vue'),
+      },
+      {
+        path: '/laporanKelasnov',
+        name: 'laporanKelas.nov',
+        component: () => import('@/views/LaporanKelas/Months/novPage.vue'),
+      },
+      {
+        path: '/laporanKelasdes',
+        name: 'laporanKelas.des',
+        component: () => import('@/views/LaporanKelas/Months/desPage.vue'),
+      },
     ],
   },
 ];
