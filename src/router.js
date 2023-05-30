@@ -284,6 +284,76 @@ const routes = [
         name: 'laporanKelas.des',
         component: () => import('@/views/LaporanKelas/Months/desPage.vue'),
       },
+      {
+        path: '/laporanPen',
+        name: 'laporanPen.index',
+        component: () => import('@/views/LaporanPendapatan/indexPage.vue'),
+      },
+      {
+        path: '/laporanins',
+        name: 'laporanins.index',
+        component: () => import('@/views/LaporanInstruktur/indexPage.vue'),
+      },
+      {
+        path: '/laporaninsjan',
+        name: 'laporanins.jan',
+        component: () => import('@/views/LaporanInstruktur/Months/janPage.vue'),
+      },
+      {
+        path: '/laporaninsfeb',
+        name: 'laporanins.feb',
+        component: () => import('@/views/LaporanInstruktur/Months/febPage.vue'),
+      },
+      {
+        path: '/laporaninsmar',
+        name: 'laporanins.mar',
+        component: () => import('@/views/LaporanInstruktur/Months/marPage.vue'),
+      },
+      {
+        path: '/laporaninsapr',
+        name: 'laporanins.apr',
+        component: () => import('@/views/LaporanInstruktur/Months/aprPage.vue'),
+      },
+      {
+        path: '/laporaninsmay',
+        name: 'laporanins.may',
+        component: () => import('@/views/LaporanInstruktur/Months/mayPage.vue'),
+      },
+      {
+        path: '/laporaninsjun',
+        name: 'laporanins.jun',
+        component: () => import('@/views/LaporanInstruktur/Months/junPage.vue'),
+      },
+      {
+        path: '/laporaninsjul',
+        name: 'laporanins.jul',
+        component: () => import('@/views/LaporanInstruktur/Months/julPage.vue'),
+      },
+      {
+        path: '/laporaninsaug',
+        name: 'laporanins.aug',
+        component: () => import('@/views/LaporanInstruktur/Months/augPage.vue'),
+      },
+      {
+        path: '/laporaninssep',
+        name: 'laporanins.sep',
+        component: () => import('@/views/LaporanInstruktur/Months/sepPage.vue'),
+      },
+      {
+        path: '/laporaninsokt',
+        name: 'laporanins.okt',
+        component: () => import('@/views/LaporanInstruktur/Months/oktPage.vue'),
+      },
+      {
+        path: '/laporaninsnov',
+        name: 'laporanins.nov',
+        component: () => import('@/views/LaporanInstruktur/Months/novPage.vue'),
+      },
+      {
+        path: '/laporaninsdes',
+        name: 'laporanins.des',
+        component: () => import('@/views/LaporanInstruktur/Months/desPage.vue'),
+      },
     ],
   },
 ];

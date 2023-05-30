@@ -130,6 +130,20 @@
                                 <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'">
                                     <router-link :to="{ name: 'laporanKelas.index' }" class="nav-link">Laporan Kelas</router-link>
                                 </li>
+                                 <!-- laporan kelas -->
+                                 <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'mo'">
+                                    <router-link :to="{ name: 'laporanins.index' }" class="nav-link">Laporan Instruktur</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'">
+                                    <router-link :to="{ name: 'laporanins.index' }" class="nav-link">Laporan Instruktur</router-link>
+                                </li>
+                                 <!-- laporan pendapatan -->
+                                 <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'mo'">
+                                    <router-link :to="{ name: 'laporanPen.index' }" class="nav-link">Laporan Pendapatan</router-link>
+                                </li>
+                                <li class="nav-item" v-if="localStorage.getItem('logInAs') == 'super admin'">
+                                    <router-link :to="{ name: 'laporanPen.index' }" class="nav-link">Laporan Pendapatan</router-link>
+                                </li>
                         </ul>
                     </div>
                 </nav>
